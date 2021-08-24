@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background: whitesmoke
+}
+
+.navbar {
+    text-align: center;
+    background: red;
+    padding: 1em;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.nav-item {
+    display: inline;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background: whitesmoke;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: gray
+}

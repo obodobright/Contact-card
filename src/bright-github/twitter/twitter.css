@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.container {
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    background: whitesmoke;
+    padding: 1em;
+    width: 520px
+}
+
+li {
+    list-style: none;
+}
+
+.followerContainer {
+    padding: 0.3em;
+    margin: 0.5em
+}
+
+.followBtn {
+    padding: 5px 16px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 1em;
+    border: 1px solid blue;
+    cursor: pointer;
+    position: relative;
+    top: -35px;
+    left: 270px;
+    color: blue
+}
+
+.timesBtn {
+    cursor: pointer;
+    position: relative;
+    top: -37px;
+    left: 290px;
+    padding: 1px 4px;
+    outline: none;
+    border: none;
+    background: blue;
+    color: white;
+    border-radius: 4em;
+}
