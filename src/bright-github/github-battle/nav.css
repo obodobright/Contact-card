@@ -10,7 +10,7 @@ body {
 
 .navbar {
     text-align: center;
-    background: red;
+    background: white;
     padding: 1em;
 }
 
@@ -23,17 +23,18 @@ body {
 
 .nav-item {
     display: inline;
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 3em;
+    padding-right: 3em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    color: white;
+    margin: 2em;
+    color: black;
     cursor: pointer;
 }
 
-.nav-item:hover {
-    background: whitesmoke;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    color: gray
+button {
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+    cursor: pointer
 }

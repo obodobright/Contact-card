@@ -26,28 +26,23 @@ class Twitter extends React.Component{
         })
    }
    handleOnFollow(id){
-      
        const follow = this.state.followers.map((f)=>{
            if(f.id === id){
             f.button = 'following' 
             
            }
-        //    if(f.id === id){
-        //        f.button = style
-        //    }
-           return f
-           
+        return f
        });
        this.setState({follow})
    }
-   handleUnFollow(id){
-       console.log(id)
-   }
+//    handleUnFollow(id){
+//        console.log(id)
+//    }
   
     render(){
         return(
             <div className="container">
-                <h3>Who to Follow</h3>
+               
                 <Followers follower={this.state.followers} 
                 // btn={this.state.button} 
                 onFollow={this.handleOnFollow}

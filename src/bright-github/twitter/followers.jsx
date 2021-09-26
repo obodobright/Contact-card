@@ -1,11 +1,21 @@
 import React from 'react';
 
 class Followers extends React.Component{
+    constructor(){
+        super()
+        this.state = {
+            isLoggedIn : true
+        }
+    }
     render(){
+        const {isLoggedIn} = this.state
+        const {follower} = this.props
+    if(isLoggedIn){       
      return(
        <div className="followerContainer">
+            <h3>Who to Follow</h3>                                                                                                                                                                                                                           
          <ul>
-           {this.props.follower.map((follower)=>(
+           {follower.map((follower)=>(
             <main key={follower.key} style={{display:'flex',border:'2px solid ash', padding:"0.5em", margin:'0.2em'}}>
                     <img src={follower.image} alt="" width="50px" height="50px" style={{borderRadius:'3em'}}/>
                 <div style={{margin:'0.3em'}}>
@@ -27,6 +37,14 @@ class Followers extends React.Component{
             </div>
             
         )
+           }
+           else{
+               return (
+                   <div>
+                       <h3 style={{color:'blue'}}>Please Login</h3>
+                   </div>
+               )
+           }
     }
 }
 
